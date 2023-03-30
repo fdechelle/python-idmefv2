@@ -9,13 +9,13 @@ with other systems.
 
 This code is currently in an experimental status and is regularly kept in sync
 with the development status of the IDMEFv2 format, as part of the
-`SECurity Exchange Format project <https://www.secef.net/>`_.
+`IDMEFv2 Task Force project <https://www.idmefv2.org/>`_.
 
 The latest revision of the IDMEFv2 format specification can be found in the
-`idmefv2-definition repository <https://github.com/SECEF/idmefv2-definition>`_.
+`idmefv2-definition repository <https://github.com/IDMEFv2/idmefv2-definition>`_.
 
 IDMEFv2 messages can be transported using the
-`python-idmefv2-transport <https://github.com/SECEF/python-idmefv2-transport>`_
+`python-idmefv2-transport <https://github.com/IDMEFv2/python-idmefv2-transport>`_
 Python library.
 
 You can find more information about the previous version (v1) of the
@@ -164,5 +164,5 @@ See the LICENSE file inside this repository for more information.
 
 To improve coordination between the various contributors,
 we kindly ask that new contributors subscribe to the
-`SECEF mailing list <https://www.freelists.org/list/secef>`_
+`IDMEFv2 mailing list <https://www.freelists.org/list/idmefv2>`_
 as a way to introduce themselves.
