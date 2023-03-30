@@ -12,7 +12,7 @@ with the development status of the IDMEFv2 format, as part of the
 `IDMEFv2 Task Force project <https://www.idmefv2.org/>`_.
 
 The latest revision of the IDMEFv2 format specification can be found in the
-`idmefv2-definition repository <https://github.com/IDMEFv2/idmefv2-definition>`_.
+`idmefv2-definition repository <https://github.com/IDMEFv2/idmefv2-Specification>`_.
 
 IDMEFv2 messages can be transported using the
 `python-idmefv2-transport <https://github.com/IDMEFv2/python-idmefv2-transport>`_
