@@ -1,5 +1,4 @@
 from datetime import datetime
-import unittest
 import uuid
 from idmefv2.message import Message
 
@@ -54,11 +53,8 @@ def message2():
     ]
     return msg
 
-class MessageTest(unittest.TestCase):
-    def testMessage1(self):
-        m = message1()
-        m.validate()
+def test_message1():
+    message1().validate()
 
-    def testMessage2(self):
-        m = message2()
-        m.validate()
+def test_message2():
+    message2().validate()
