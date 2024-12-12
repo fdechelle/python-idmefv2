@@ -1,4 +1,0 @@
-[submodule "data"]
-	path = data
-	url = https://github.com/SECEF/idmefv2-definition.git
-	branch = main
