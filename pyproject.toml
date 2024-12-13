@@ -36,3 +36,7 @@ Repository = "https://github.com/IDMEFv2/python-idmefv2"
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[project.entry-points."idmefv2.serializers"]
+"application/json" = "idmefv2.serializers.json:JSONSerializer"
+"text/json" = "idmefv2.serializers.json:JSONSerializer"

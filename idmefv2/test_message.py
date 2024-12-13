@@ -1,4 +1,5 @@
 from datetime import datetime
+import sys
 import uuid
 from idmefv2.message import Message
 
@@ -58,3 +59,8 @@ def test_message1():
 
 def test_message2():
     message2().validate()
+
+def test_serialize_message1():
+    pelode = message1().serialize("application/json")
+    message = Message.unserialize(pelode)
+    assert message['Version'] == VERSION
