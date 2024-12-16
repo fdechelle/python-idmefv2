@@ -53,16 +53,21 @@ class Message(dict):
 
     def __get_version(self):
         version_in_message = self.get('Version')
+        if version_in_message is None or not isinstance(version_in_message, str):
+            return None
         pat = r'\d\.D\.V([\d]+)'
         m = re.match(pat, version_in_message)
+        if m is None:
+            return None
         version = m.group(1)
         return version
 
     def __get_schema_resource(self):
         version = self.__get_version()
-        version_package = self._SCHEMA_BASE_PACKAGE + '.' + version
-        if importlib.resources.is_resource(version_package, self._SCHEMA_RESOURCE):
-            return importlib.resources.files(version_package).joinpath(self._SCHEMA_RESOURCE)
+        if version is not None:
+            version_package = self._SCHEMA_BASE_PACKAGE + '.' + version
+            if importlib.resources.is_resource(version_package, self._SCHEMA_RESOURCE):
+                return importlib.resources.files(version_package).joinpath(self._SCHEMA_RESOURCE)
         latest_package = self._SCHEMA_BASE_PACKAGE + '.latest'
         return importlib.resources.files(latest_package).joinpath(self._SCHEMA_RESOURCE)
 
